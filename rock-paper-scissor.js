@@ -57,6 +57,14 @@ function playGame(rounds) {
         console.log(computerChoice)
         playRound(computerChoice, humanChoice)
     }
+    if (humanScore > computerScore) {
+        console.log(`Congrats! You won the game ${humanScore}-${computerScore}`)
+
+    } else if (computerScore > humanScore) {
+        console.log(`Unlucky loser! You lost ${computerScore} - ${humanScore}`)
+    } else {
+        console.log(`It's a draw! Rock, Paper, Scissors is the real winner!`)
+    }
 }
 
 //initalise variable for human score
