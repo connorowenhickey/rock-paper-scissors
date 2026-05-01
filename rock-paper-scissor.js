@@ -73,4 +73,6 @@ let humanScore = 0
 //intialise variable for computer score
 let computerScore = 0
 
-playGame(5)
+let rounds = prompt('How many rounds do you want to play?')
+
+playGame(rounds)
